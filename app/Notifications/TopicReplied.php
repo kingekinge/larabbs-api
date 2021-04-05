@@ -44,6 +44,7 @@ class TopicReplied extends Notification implements ShouldQueue
         ];
     }
 
+
     public function toMail($notifiable)
     {
         $url = $this->reply->topic->link(['#reply' . $this->reply->id]);
